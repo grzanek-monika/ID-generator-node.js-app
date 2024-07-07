@@ -22,10 +22,10 @@ for(let i = 0; i < 20; i++) {
     } else {
         person.firstName = randChoice(maleNames);
     }
-    person.lastNames = lastNames[Math.floor(Math.random() * lastNames.length)];
+    person.lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
     person.age = Math.floor((Math.random() * 60) + 18);
     person.phone = phoneNumbers[Math.floor(Math.random() * phoneNumbers.length)];
-    person.email = `${person.firstName}.${person.lastName}@example.com`;
+    person.email = person.firstName.toLowerCase() + '.' + person.lastName.toLowerCase() + '@example.com';
 
     people.push(person);
 }
