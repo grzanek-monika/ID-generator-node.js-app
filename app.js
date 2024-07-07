@@ -33,5 +33,4 @@ for(let i = 0; i < 20; i++) {
 fs.writeFile('people.json', JSON.stringify(people), (err) => {
     if (err) throw err;
     console.log('The file has been saved!');
-    console.log(people);
   });     
